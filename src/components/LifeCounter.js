@@ -5,14 +5,14 @@ class LifeCounter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      lifeTotal: "20"
+      lifeTotal: 20
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(event) {
-    let newLifeTotal = this.state.lifeTotal + 1;
-    this.setState({ lifeTotal: newLifeTotal });
+  onClick(e) {
+    this.setState({
+        lifeTotal: this.state.lifeTotal + 1
+    });
   }
 
   render() {
@@ -20,6 +20,7 @@ class LifeCounter extends React.Component {
       <div>
         <h1>{this.props.message}</h1>
         <h1>Life Total: {this.state.lifeTotal}</h1>
+        <button onClick={this.onClick.bind(this)}>Gain 1 Life</button>
       </div>
     );
   }
