@@ -1,9 +1,14 @@
 // main.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LifeCounter from './components/LifeCounter';
+import Player1 from './components/Player1';
+import Player2 from './components/Player2';
 
 ReactDOM.render(
-  <LifeCounter message="Welcome to MTG-Counter!" />,
+  <div>
+    <h1>Welcome to MTG Counter!</h1>
+    <Player1 />
+    <Player2 />
+  </div>,
   document.getElementById('app')
 );
