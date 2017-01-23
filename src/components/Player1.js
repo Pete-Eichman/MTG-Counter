@@ -23,13 +23,13 @@ let Player1 = React.createClass({
 
   poisonUp: function() {
     this.setState({
-      life: this.state.poison + 1
+      poison: this.state.poison + 1
     });
   },
 
   poisonDown: function() {
     this.setState({
-      life: this.state.poison - 1
+      poison: this.state.poison - 1
     });
   },
 

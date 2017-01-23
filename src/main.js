@@ -7,7 +7,6 @@ import Player2 from './components/Player2';
 
 ReactDOM.render(
   <div>
-    <h1>Welcome to MTG-Counter!</h1>
     <Player1 />
     <Player2 />
   </div>,
