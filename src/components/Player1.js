@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Card, Row, Col } from 'react-materialize';
 
 let Player1 = React.createClass({
   getInitialState: function() {
@@ -37,11 +38,13 @@ let Player1 = React.createClass({
       <h1>Player 1</h1>
       <h2>Life Total:</h2>
       <h2>{this.state.life}</h2>
-      <button onClick = {this.lifeUp}>+1 Life</button>
-      <button onClick = {this.lifeDown}>-1 Life</button>
-      <button onClick = {this.poisonUp}>+1 Poison</button>
-      <button onClick = {this.poisonDown}>-1 Poison</button>
-     </div>
+      <Button node='a' waves='light' onClick = {this.lifeUp}>+1 Life</Button>
+      <Button node='a' waves='light' onClick = {this.lifeDown}>-1 Life</Button>
+      <h2>Poison Counters:</h2>
+      <h2>{this.state.poison}</h2>
+      <Button node='a' waves='light' onClick = {this.poisonUp}>+1 Poison</Button>
+      <Button node='a' waves='light' onClick = {this.poisonDown}>-1 Poison</Button>
+    </div>
   }
 });
 
