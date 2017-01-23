@@ -36,12 +36,10 @@ let Player2 = React.createClass({
   render: function() {
     return <div>
       <h1>Player 2</h1>
-      <h2>Life Total:</h2>
-      <h2>{this.state.life}</h2>
+      <h2>Life: {this.state.life}</h2>
       <Button node='a' waves='light' onClick = {this.lifeUp}>+1 Life</Button>
       <Button node='a' waves='light' onClick = {this.lifeDown}>-1 Life</Button>
-      <h2>Poison Counters:</h2>
-      <h2>{this.state.poison}</h2>
+      <h2>Poison: {this.state.poison}</h2>
       <Button node='a' waves='light' onClick = {this.poisonUp}>+1 Poison</Button>
       <Button node='a' waves='light' onClick = {this.poisonDown}>-1 Poison</Button>
      </div>
