@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Row, Col } from 'react-materialize';
+import { Button, Card, Row, Col} from 'react-materialize';
 
 let Player1 = React.createClass({
   getInitialState: function() {
@@ -23,28 +23,27 @@ let Player1 = React.createClass({
 
   poisonUp: function() {
     this.setState({
-      life: this.state.poison + 1
+      poison: this.state.poison + 1
     });
   },
 
   poisonDown: function() {
     this.setState({
-      life: this.state.poison - 1
+      poison: this.state.poison - 1
     });
   },
 
   render: function() {
     return <div>
-      <h1>Player 1</h1>
-      <h2>Life Total:</h2>
-      <h2>{this.state.life}</h2>
-      <Button node='a' waves='light' onClick = {this.lifeUp}>+1 Life</Button>
-      <Button node='a' waves='light' onClick = {this.lifeDown}>-1 Life</Button>
-      <h2>Poison Counters:</h2>
-      <h2>{this.state.poison}</h2>
-      <Button node='a' waves='light' onClick = {this.poisonUp}>+1 Poison</Button>
-      <Button node='a' waves='light' onClick = {this.poisonDown}>-1 Poison</Button>
-    </div>
+    <h1>Player 1</h1>
+    <h2>{this.state.life}</h2>
+    <Button floating large className="green z-depth-3" node='a' waves='light' onClick = {this.lifeUp}>+1</Button>
+    <Button floating large className="red z-depth-3" node='a' waves='light' onClick = {this.lifeDown}>-1</Button>
+    <h3>Poison:</h3>
+    <h3>{this.state.poison}</h3>
+    <Button floating large className="purple z-depth-3" node='a' waves='light' onClick = {this.poisonUp}>+1 &#x2620;</Button>
+    <Button floating large className="purple z-depth-3" node='a' waves='light' onClick = {this.poisonDown}>-1 &#x2620;</Button>
+   </div>
   }
 });
 

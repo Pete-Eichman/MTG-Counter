@@ -1,15 +1,13 @@
 // main.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button, Card, Row, Col } from 'react-materialize';
-import Player1 from './components/Player1';
-import Player2 from './components/Player2';
+import { Button, Card, CardPanel, Row, Col } from 'react-materialize';
+import App from './components/App';
+
 
 ReactDOM.render(
   <div>
-    <h1>Welcome to MTG-Counter!</h1>
-    <Player1 />
-    <Player2 />
+    <App />
   </div>,
-  document.getElementById('app')
+  document.getElementById('react-root')
 );
