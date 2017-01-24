@@ -36,7 +36,6 @@ let Player2 = React.createClass({
   render: function() {
     return <div>
       <h1>Player 2</h1>
-<<<<<<< HEAD
       <h2>{this.state.life}</h2>
       <Button floating large className="green z-depth-3" node='a' waves='green' onClick = {this.lifeUp}>+1</Button>
       <Button floating large className="red z-depth-3" node='a' waves='red' onClick = {this.lifeDown}>-1</Button>
@@ -45,15 +44,6 @@ let Player2 = React.createClass({
       <Button floating large className="purple z-depth-3" node='a' waves='light' onClick = {this.poisonUp}>+1 &#x2620;</Button>
       <Button floating large className="purple z-depth-3" node='a' waves='light' onClick = {this.poisonDown}>-1 &#x2620;</Button>
     </div>
-=======
-      <h2>Life: {this.state.life}</h2>
-      <Button node='a' waves='light' onClick = {this.lifeUp}>+1 Life</Button>
-      <Button node='a' waves='light' onClick = {this.lifeDown}>-1 Life</Button>
-      <h2>Poison: {this.state.poison}</h2>
-      <Button node='a' waves='light' onClick = {this.poisonUp}>+1 Poison</Button>
-      <Button node='a' waves='light' onClick = {this.poisonDown}>-1 Poison</Button>
-     </div>
->>>>>>> 3a0eae6f10254840be4436e388bd5b752406be91
   }
 });
 
