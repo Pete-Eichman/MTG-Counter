@@ -10,7 +10,7 @@ const App = props => {
       <Row>
       <h1 className="center white-text">Welcome to MTG Counter!</h1>
         <Col s={6} m={6} l={6} className="center">
-          <CardPanel className="blue black-text z-depth-5">
+          <CardPanel className="blue lighten-1 black-text z-depth-5">
             <Player1 />
           </CardPanel>
         </Col>

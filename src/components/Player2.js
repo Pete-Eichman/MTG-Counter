@@ -39,8 +39,7 @@ let Player2 = React.createClass({
       <h2>{this.state.life}</h2>
       <Button floating large className="green z-depth-3" node='a' waves='green' onClick = {this.lifeUp}>+1</Button>
       <Button floating large className="red z-depth-3" node='a' waves='red' onClick = {this.lifeDown}>-1</Button>
-      <h3>Poison:</h3>
-      <h3>{this.state.poison}</h3>
+      <h3>Poison: {this.state.poison}</h3>
       <Button floating large className="purple z-depth-3" node='a' waves='light' onClick = {this.poisonUp}>+1 &#x2620;</Button>
       <Button floating large className="purple z-depth-3" node='a' waves='light' onClick = {this.poisonDown}>-1 &#x2620;</Button>
     </div>
